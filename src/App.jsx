@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [task, setTask] = useState(["Eat", "Swim"]);
-  const [newTask, setNewTask] = useState("");
+  const [task, setTask] = useState(["Eat", "Clean"]);
+  const [newTask, setNewTask] = useState("asd");
 
   function HandleInputChange(e) {
     setNewTask(e.target.value);
