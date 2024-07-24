@@ -1,26 +1,100 @@
-body {
-  background-color: lightgreen;
+.container {
+  background: #f66666;
+  box-shadow: 5px 5px 0 0 #6464641a;
+  color: #fff;
+  font-family: DM sans, sans-serif;
+  margin: 4rem auto;
+  max-width: 500px;
+  padding: 2rem 3rem 3rem;
 }
 
-.input-box {
-  padding: 10px;
-  width: 50%;
-  border-radius: 10px;
-  background-color: lightblue;
-  color: white;
+.title {
+  border-bottom: 1px solid grey;
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
 }
 
-.add-btn {
-  width: 51%;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: green;
-  font-size: 20px;
+.title span {
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  margin-left: 3px;
+  margin-top: 0.2rem;
 }
 
-.delete-btn {
-  background-color: lightcoral;
-  margin-left: 25px;
-  width: 100px;
-  height: 25px;
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+.task-list li {
+  align-items: center;
+  background: #ffffff1a;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -3rem 4px;
+  padding: 1.1rem 3rem;
+  transform-origin: top left;
+  transition: all 0.5s ease;
+}
+
+.task-list .action {
+  flex-shrink: 0;
+  padding-left: 0.7rem;
+}
+
+.task-list .btn-action {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+
+.form label {
+  font-size: 1.3rcap;
+  margin-bottom: 0.5rem;
+  min-width: 100%;
+}
+
+.form input {
+  background: #f7f1f1;
+  border: none;
+  flex-grow: 1;
+  font-size: medium;
+  padding: 0 1.5em;
+  height: 40px;
+}
+
+.form button {
+  background: #f66;
+  border: 1px solid #ffffff4d;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 5px;
+  padding: 0 1.3rem;
+  text-transform: uppercase;
+}
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
 }
